@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>PROBLEM1</title>
+</head>
+<body>
+    <script>
+        var inputUser;
+        do {
+            inputUser = prompt("Enter a number: ");
+        }
+            while (isNaN(inputUser) || inputUser === "" || inputUser === null);
+
+            var num = parseInt(inputUser);
+            var output = "Number entered: " + num + "<br>";
+
+            if (num%2 === 0){
+                for (var w = num; w >= 1; w--) {
+                    for (var a = num; a>=1; a--) {
+                        output += w + " ";
+      
+                    }
+                    output += "<br>";
+    
+                }
+            }
+                else{
+                    for (var w = num; w >= 1; w--) {
+                            for (var a = 1; a <= w; a++) {
+                               output += w + " ";
+                           }
+                          output += "<br>";
+                          }
+            }
+                
+                    document.write(output);
+    </script>
+</body>
+</html>
